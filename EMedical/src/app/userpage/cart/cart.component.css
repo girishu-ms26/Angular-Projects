@@ -1,0 +1,22 @@
+.doc-list{
+    background-color:rgb(202, 94, 51);
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 2%;
+    padding: 18px;
+    font-size: large;
+    color: white;
+    border-radius: 8px;
+
+}
+
+.doc{
+    margin-top: 2%;
+    margin-left:5%;
+    margin-right: 5%;
+    background-color: antiquewhite;
+    border-radius: 10px;
+    max-width: 36%;
+    padding: 8px;
+    
+}

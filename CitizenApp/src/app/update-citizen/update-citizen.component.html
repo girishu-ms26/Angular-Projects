@@ -1,0 +1,66 @@
+
+<script src="/assets/js/Fvalid.js"></script>
+<head>
+
+<!--===============================================================================================-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="/resources/css/citizen-form.css" rel="stylesheet">
+<!--===============================================================================================-->
+<title>Citizen Form</title>
+</head>
+<body>
+		<div id="Header">
+			<h1>Vaccine Management System</h1>		
+		</div>
+		
+		<div id="formContainer">			
+			<h3>Form for Citizen Management</h3>
+				<!-- we need to associate this data with Citizen ID -->
+				<div class="limiter">
+		<div class="container-table100">
+			<div class="wrap-table100">	
+				<div class="table100">
+                    <form (ngSubmit)="updateCitizen(form)" #form="ngForm">
+					<table>					
+						<thead>
+							<tr class="table100-head">
+								<th class="column1">UID</th>
+								<th class="column2">Dose No</th>
+								<th class="column3">First Name</th>
+								<th class="column4">Middle Name</th>
+								<th class="column5">Last Name</th>
+								<th class="column6">Age</th>
+								<th class="column7">Gender</th>
+								<th class="column8">Email</th>
+								<th class="column9">Phone Number</th>
+								<th class="column10">Action</th>
+							</tr>
+						</thead>
+					<tbody>                   
+						<tr>							
+                            
+                                <input type="hidden" name="refid" [(ngModel)]="citizen.refid">
+                                <td class="column1"><input type="text" name="uid" [(ngModel)]="citizen.uid" style="width:100px"></td>
+                                <td class="column2"><input type="text" name="vstatus" [(ngModel)]="citizen.vstatus" style="width:30px"></td>
+                                <td class="column3"><input type="text" name="first_name" [(ngModel)]="citizen.first_name" style="width:100px"></td>
+                                <td class="column4"><input type="text" name="middle_name" [(ngModel)]="citizen.middle_name" style="width:100px"></td>
+                                <td class="column5"><input type="text" name="last_name" [(ngModel)]="citizen.last_name" style="width:100px"></td>
+                                <td class="column6"><input type="text" name="age" [(ngModel)]="citizen.age" style="width:40px"></td>
+                                <td class="column7"><input type="text" name="gender" [(ngModel)]="citizen.gender" style="width:80px"></td>
+                                <td class="column8"><input type="text" name="email" [(ngModel)]="citizen.email" style="width:100px"></td>
+                                <td class="column9"><input type="text" name="phno" [(ngModel)]="citizen.phno" style="width:100px"></td>	
+                                <td class="column10"><input type="submit" value="Save" class="actionBtn"></td>	
+                            			
+						</tr>                    
+					</tbody>
+					</table>
+                </form>
+				</div>
+			</div>
+		</div>
+		</div>
+
+		</div>
+</body>

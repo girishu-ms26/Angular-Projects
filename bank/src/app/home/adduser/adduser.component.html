@@ -1,0 +1,44 @@
+<style>
+    login-page {
+        width: 360px;
+        padding: 8% 0 0;
+        margin: auto;
+      }
+      .form {
+        position: relative;
+        z-index: 2;
+        background: #ffffff;
+        max-width: 400px;
+        margin: 10px auto 100px;
+        padding: 10px;
+        text-align: center;
+        box-shadow: 0 0 20px 0 rgba(255, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+      }
+      .form input {
+        font-family: "Roboto", sans-serif;
+        outline: 0;
+        background: #949494;
+        width: 100%;
+        border: 0;
+        margin: 0 0 10px;
+        padding: 5px;
+        box-sizing: border-box;
+        font-size: 20px;
+      } 
+     </style>
+<router-outlet>
+          <div class="New-user">
+        <div class="form">
+            <form class="New-user">
+            <input id="fn" type="text" placeholder="First name"/>
+            <input id="mn" type="text" placeholder="Middle name"/>
+            <input id="ln" type="text" placeholder="Last name"/>
+            <input id="un" type="text" placeholder="Set Username"/>
+            <INPUT id="gender" TYPE="radio" NAME="GENDER"/>Male<INPUT TYPE="radio" NAME="GENDER"/>Female
+            <INPUT TYPE="PASSWORD" placeholder="Set Password">
+                <INPUT TYPE="PASSWORD" placeholder="Confirm Password">
+          </form>
+          <button (click)="opensweetalert()"><span>Create</span></button>
+        </div>
+      </div>
+</router-outlet>

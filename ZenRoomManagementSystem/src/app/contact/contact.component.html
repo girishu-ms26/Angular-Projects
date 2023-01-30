@@ -1,0 +1,74 @@
+
+<section class="contact" id="contact">
+    
+    <h1 class="heading">
+        <span>c</span>
+        <span>o</span>
+        <span>n</span>
+        <span>t</span>
+        <span>a</span>
+        <span>c</span>
+        <span>t</span>
+    </h1>
+
+    <div class="row">
+
+        <div class="image">
+            <img src="assets\contact.svg" alt="">
+        </div>
+
+        <form #Contactform="ngForm" (ngSubmit)="contact()">
+            <div class="inputBox">
+                <input type="text"  placeholder="first name" [(ngModel)]="c.first_name" required  #first_name="ngModel">
+                <input type="email"  placeholder="last name" [(ngModel)]="c.last_name" required #last_name="ngModel">
+            </div>
+            <div class="inputBox">
+                <input type="number" placeholder="phone number" [(ngModel)]="c.phone_number" required #phone_number="ngModel">
+                <input type="email" placeholder="email" [(ngModel)]="c.email" required  #email="ngModel">
+            </div>
+            <textarea  placeholder="message" name="" id="" cols="30" rows="10" required></textarea>
+            <button  type="submit" class="btn">Send</button>
+        </form>
+
+    </div>
+    
+</section>
+
+<section class="footer">
+
+    <div class="box-container">
+
+
+        <div class="box">
+            <h3>about us</h3>
+            <p>ROYAL LOTUS HOTEL WITH SEVENTEEN GLORIOUS VILLAS
+                We understand that the definition of luxury varies from person to person and our guests can
+                expect personalised services and genuine hospitality as part of the Samsara experience.</p>
+        </div>
+        <div class="box">
+            <h3>branch locations</h3>
+            <a href="#">india</a>
+            <a href="#">USA</a>
+            <a href="#">japan</a>
+            <a href="#">france</a>
+        </div>
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="#">home</a>
+            <a href="#">gallery</a>
+            <a href="#">book</a>
+            <a href="#">policies</a>
+            <a href="#">contact</a>
+            
+        </div>
+        <div class="box">
+            <h3>follow us</h3>
+            <a href="#">facebook</a>
+            <a href="#">instagram</a>
+            <a href="#">twitter</a>
+            <a href="#">linkedin</a>
+        </div>
+
+    </div>
+
+</section>

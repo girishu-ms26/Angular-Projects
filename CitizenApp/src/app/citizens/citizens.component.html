@@ -1,0 +1,50 @@
+
+<h1>Vaccine Management System</h1>
+<div class="limiter">
+    <div class="container-table100">
+        <div class="wrap-table100"> 
+            <div class="table100">
+                <form id="Search" class="form" action="searchCitizen">
+					<table style="width: 1145px; ">			
+						<thead>				
+							<tr class="table100-head">					
+								<th style="width: 189px; "><input id="Fname" name="Fname" style="width: 187px" required/></th>
+								<th style="width: 920px; "><a class="button-40">Search by First Name</a></th>		
+								<th style="width: 216px; "><a href="add" class="button-40" role="button">+Add Citizen</a></th>
+							</tr>					
+						</thead>					
+					</table>			  			
+				</form><BR>
+<table>
+    <thead>
+        <tr class="table100-head">      
+            <th class="column1">UID</th>
+            <th class="column2">Status</th>
+            <th class="column3">First Name</th>
+            <th class="column4">Middle Name</th>
+            <th class="column5">Last Name</th>
+            <th class="column6">Age</th>
+            <th class="column7">Gender</th>
+            <th class="column8">Email</th>
+            <th class="column9">Phone No</th>
+            <th class="column10">Action</th>        
+        </tr>
+    </thead>
+        <tbody>
+            <tr *ngFor="let Citizen of citizens">
+                <td class="column1">{{Citizen.uid}}</td>
+                <td class="column2">{{Citizen.vstatus}}</td>
+                <td class="column3">{{Citizen.first_name}}</td>
+                <td class="column4">{{Citizen.middle_name}}</td>
+                <td class="column5">{{Citizen.last_name}}</td>
+                <td class="column6">{{Citizen.age}}</td>
+                <td class="column7">{{Citizen.gender}}</td>
+                <td class="column8">{{Citizen.email}}</td>
+                <td class="column9">{{Citizen.phno}}</td>
+                <td class="column10"><button (click)="deleteCitizen(Citizen.refid)" class='btn btn-primary'>Delete</button> / 
+                    <button routerLink="/update/{{Citizen.refid}}" class='btn btn-primary'>Update</button></td>
+            </tr>
+        </tbody>
+</table>
+
+<router-outlet></router-outlet>

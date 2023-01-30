@@ -1,0 +1,28 @@
+<div>
+    <div class="doc-list">
+        Your Cart 
+    </div>
+    <div class="doc">
+    <table border="1">
+        <tr> 
+            
+            <th>Medicine</th>
+            <th>Desccription</th>
+            <th>Price</th>
+            <th>      </th>
+            
+        </tr>
+        <tr *ngFor="let cart of carts">
+            
+            <td>{{cart.medicineName}}</td>
+            <td>{{cart.description}}</td>
+            <td>{{cart.price}}</td>
+            <td> <button (click)="deleteCart(cart.medicineId)" class="btn btn-danger">Delete</button></td>
+            
+        </tr>
+        </table>
+        <button class="dropdown-item" (click)="payment()">Proceed to checkout</button>
+        <button class="dropdown-item" (click)="back()">Back</button>
+    </div>
+   
+    </div>

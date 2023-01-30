@@ -1,0 +1,47 @@
+
+<header class="main-header-1">
+    <div>
+    <a routerLink="" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="logo">E-Medicare</a>
+    </div>
+    <nav class="navigation">
+        <a routerLink="/cart" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="main-items">Cart</a>
+        <a routerLink="" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="main-items">Logout</a>
+    </nav>
+</header>
+<router-outlet></router-outlet>
+
+<div>
+    <div class="doc-list">
+        <h2>Medicines</h2>
+    </div>
+    <div class="doc">
+    <table border="1">
+        <tr>             
+            <th>Medicine Name</th>
+            <th>Mfd</th>
+            <th>Type</th>
+            <th>Price</th>
+            <th>Description</th>
+            <th>Exp.Date</th>
+            <th>Status</th>
+            <th>Action</th>
+        </tr>
+        <tr *ngFor="let Medicines of medicines ">
+            
+            <td>{{Medicines.medicineName}}</td>
+            <td>{{Medicines.manufacturedDate}}</td>
+            <td>{{Medicines.type}}</td>
+            <td>{{Medicines.price}}</td>
+            <td>{{Medicines.description}}</td>
+            <td>{{Medicines.expireDate}}</td>
+            <td>{{Medicines.status}}</td>
+           <td> <button (click)="deleteMedicine(Medicines.medicineId)" class='btn btn-primary'>Delete</button> / 
+            <button class='btn btn-primary'>Update</button> </td>
+        </tr>
+        </table>
+        <!--<button class="dropdown-item" (click)="payment()">Proceed to checkout</button> -->
+    </div>
+   
+    </div>
+
+<router-outlet></router-outlet>

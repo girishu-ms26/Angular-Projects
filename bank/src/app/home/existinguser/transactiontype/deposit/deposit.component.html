@@ -1,0 +1,41 @@
+<style>
+    login-page {
+        width: 360px;
+        padding: 8% 0 0;
+        margin: auto;
+      }
+      .form {
+        position: relative;
+        z-index: 2;
+        background: #ffffff;
+        max-width: 400px;
+        margin: 10px auto 100px;
+        padding: 10px;
+        text-align: center;
+        box-shadow: 0 0 20px 0 rgba(255, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+      }
+      .form input {
+        font-family: "Roboto", sans-serif;
+        outline: 0;
+        background: #949494;
+        width: 100%;
+        border: 0;
+        margin: 0 0 10px;
+        padding: 5px;
+        box-sizing: border-box;
+        font-size: 20px;
+      } 
+     </style>
+
+          <div class="Deposit">
+        <div class="form">
+            <input id="an" type="text" placeholder="Account number"/>
+            <input id="ifsc" type="text" placeholder="IFSC Code"/>
+            <input id="en" type="number"  placeholder="Enter Amount" />
+            <input id="phno" type="number" placeholder="Registered mobile number"/><button (click)="opensweetalert1()"><span>Get OTP</span></button>
+            <input id="otp" type="number" placeholder="Enter OTP"/>
+          <button (click)="opensweetalert()"><span>Deposit</span></button>
+        </div>
+      </div>
+
+<router-outlet></router-outlet>

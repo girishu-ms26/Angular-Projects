@@ -1,0 +1,63 @@
+<style>
+    login-page {
+        width: 360px;
+        padding: 8% 0 0;
+        margin: auto;
+      }
+      .form {
+        position: absolute;
+        z-index: 2;
+        background: #ffffff;
+        max-width: 400px;
+        margin: 10px auto 100px;
+        padding: 10px;
+        text-align: center;
+        box-shadow: 0 0 20px 0 rgba(255, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+      }
+      .form input {
+        font-family: "Roboto", sans-serif;
+        outline: 0;
+        background: #949494;
+        width: 100%;
+        border: 0;
+        margin: 0 0 10px;
+        padding: 5px;
+        box-sizing: border-box;
+        font-size: 20px;
+      } 
+      .form1 {
+        position: relative;
+        z-index: 2;
+        background: #ffffff;
+        max-width: 400px;
+        margin: 10px auto 100px;
+        padding: 10px;
+        text-align: center;
+        box-shadow: 0 0 20px 0 rgba(255, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+      }
+      .form1 input {
+        font-family: "Roboto", sans-serif;
+        outline: 0;
+        background: #949494;
+        width: 100%;
+        border: 0;
+        margin: 0 0 10px;
+        padding: 5px;
+        box-sizing: border-box;
+        font-size: 20px;
+      }
+     
+     </style>
+      <div class="to account">
+        <div class="form1">
+            <h4>Enter Recepient Account Details</h4><BR>
+
+            <input id="ant" type="text" placeholder="Account number"/>
+            <input id="ant" type="text" placeholder="Confirm Account number"/>
+            <input id="ifsct" type="text" placeholder="IFSC Code"/>
+            <input id="Rn" type="text" placeholder="Recepient Name"/>
+          <button (click)="opensweetalert1()"><span>Transfer</span></button>
+        </div>
+      </div>
+
+<router-outlet></router-outlet>

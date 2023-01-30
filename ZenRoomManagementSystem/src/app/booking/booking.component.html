@@ -1,0 +1,81 @@
+
+<section class="booking" id="booking">
+    <h1 class="heading">
+        <span>B</span>
+        <span>O</span>
+        <span>O</span>
+        <span>K</span>
+        <span>I</span>
+        <span>N</span>
+        <span>G</span>
+    </h1>
+        <div class="row">
+
+            <div class="image">
+                <img src="assets/book-img.svg" alt="book image" />
+            </div>
+    
+            <form #Bookingform="ngForm" (ngSubmit)="booking()">
+                <small class="text-success">{{msg}}</small>
+                <div class="inputBox">
+                    <h3>first Name</h3>
+                    <input type="text" name="first_name"  placeholder="Enter first name" [(ngModel)]="b.first_name"  required 
+                    #first_name="ngModel"
+                    [class.is-invalid]="first_name.invalid && first_name.touched"
+                    >
+            <small class="text-danger" [class.d-none]="first_name.valid || first_name.untouched"> first_name  required!</small>
+                </div>
+                <div class="inputBox">
+                    <h3>last Name</h3>
+                    <input type="text" name="last_name"  placeholder="Enter last name" [(ngModel)]="b.last_name"  required 
+                    #last_name="ngModel"
+                    [class.is-invalid]="last_name.invalid && last_name.touched"
+                    >
+                    <small class="text-danger" [class.d-none]="last_name.valid || last_name.untouched"> last_name required!</small>
+                </div>
+                <div class="inputBox">
+                    <h3>number of guest</h3>
+                    <input type="number" name="guest" required placeholder="enter number of guests" [(ngModel)]="b.number_of_guest"  required 
+                    #number_of_guest="ngModel"
+                    [class.is-invalid]="number_of_guest.invalid && number_of_guest.touched"
+                    >
+                    <small class="text-danger" [class.d-none]="number_of_guest.valid || number_of_guest.untouched"> number_of_guest required!</small>
+                </div>
+
+
+                <div class="inputBox">
+                    <h3>phone number</h3>
+                    <input type="number" name="phone_number" required placeholder="enter your phone number " [(ngModel)]="b.phone_number"  required  
+                    #phone_number="ngModel"
+                    [class.is-invalid]="phone_number.invalid && phone_number.touched"
+                    >
+                    <small class="text-danger" [class.d-none]="phone_number.valid ||phone_number.untouched"> phone number required!</small>
+                </div>
+                <div class="inputBox">
+                    <h3>Email</h3>
+                    <input type="text" name="email" required placeholder="enter your emailId " [(ngModel)]="b.email"  required  
+                    #email="ngModel"
+                    [class.is-invalid]="email.invalid && email.touched"
+                    >
+                    <small class="text-danger" [class.d-none]="email.valid ||email.untouched"> email_id required!</small>
+                </div>
+
+                <div class="inputBox">
+                    <h3>arrival</h3>
+                    <input type="date" name="arrival" [(ngModel)]="b.arrival"  required 
+                    #arrival="ngModel"
+                    >
+                    <small class="text-danger" [class.d-none]="arrival.valid ||arrival.untouched"> select the arrival date!</small>
+                </div>
+                <div class="inputBox">
+                    <h3>departure</h3>
+                    <input type="date"  name="departure" [(ngModel)]="b.departure"  required 
+                    #departure="ngModel"
+                    >
+                    <small class="text-danger" [class.d-none]="departure.valid ||departure.untouched"> select the departure date!</small>
+                </div>
+                <button [disabled]="Bookingform.form.invalid" type="submit" class="btn">Book</button>
+            </form>
+
+        </div>
+    </section>

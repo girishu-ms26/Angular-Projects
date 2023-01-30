@@ -1,0 +1,49 @@
+.heading{
+    text-align: center;
+    padding:2.5rem 0;
+    margin-top: 4rem;
+
+}
+
+.heading span{
+    font-size: 3.5rem;
+    background:rgba(255, 165, 0,.2);
+    color:#ffa500;
+    border-radius: .5rem;
+    padding:.1rem 1rem;
+    
+}
+
+.heading span.space{
+    background:none;
+}
+
+.policies .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+}
+
+.policies .box-container .box{
+    flex: 1 1 30rem;
+    border-radius: .5rem;
+    padding:1rem;
+    text-align: center;
+}
+
+.policies .box-container .box h3{
+    font-size: 1.8rem;
+    color:#333;
+}
+
+.policies .box-container .box p{
+    font-size: 1.2rem;
+    color:#666;
+    padding:1rem 0;
+    
+}
+
+.policies .box-container .box:hover{
+    box-shadow: 0 1rem 2rem rgba(0,0,0,.1);
+}
+

@@ -1,0 +1,109 @@
+.login-form-container{
+    position: fixed;
+    top:0; left:0; 
+    z-index: 10000;
+    min-height: 100vh;
+    width: 100%;
+    background-color:rgba(0,0,0,.7) ;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.login-form-container form{
+    margin: 1rem;
+    padding: 2rem 2rem;
+    border-radius: 2.5rem;
+    background-color: #fff;
+    width:30rem;
+    height:40rem;
+    background: rgba(255,255,255,0.5);
+    box-shadow: 0px 4px 16px rgba(0,0,0,0.5);
+}
+.login-form-container form h3{
+    font-size:1.4rem;
+    color:black;
+    text-transform:uppercase; ;
+    text-align:center;
+    padding:0 0;
+    font-weight: bold;
+    
+}
+.login-form-container form .box{
+    width:100%;
+    padding:1rem;
+    font-size:1.1rem;
+    color:#333;
+    margin:0.5rem 0;
+    border: .4rem solid rgba(0,0,0,.5);
+    text-transform:none;
+}
+
+
+.login-form-container form p{
+    padding:1rem 0;
+    font-size: 1.2rem;
+    color:black;
+    font-weight: bold;
+}
+
+.login-form-container form p a{
+    color:var(--orange);
+}
+
+.login-form-container form p a:hover{
+    color:#333;
+    text-decoration: underline;
+}
+input[type=text],input[type=password]{
+    width: 100%;
+    height: 40px;
+    padding: 5px;
+    margin-bottom: 16px;
+    margin-top: 5px;
+    border: 2px solid #ccc;
+    color: #4f4f4f;
+    font-size: 16px;
+    border-radius: 2px;
+    }
+    label{
+    color: #333;
+    
+    font-size: 1.2rem;
+    font-weight: bold;
+
+    }
+    center{
+    font-size:32px;
+    }
+    
+
+    
+    .btn{
+    display: center;
+    margin-top: 0;
+    
+    background: linear-gradient(#ffbc00 5%, #ffdd7f 100%);
+    color:black;
+    padding:.3rem 4rem ;
+    border:.1.5rem solid #ffa500;
+    cursor: pointer;
+    font-size: 1.3rem;
+    text-decoration: none;
+    font-weight: bold;
+    
+    }
+    
+    .btn:hover{
+        background:rgba(255, 165, 0,.2);
+        color:var(--orange);
+    }
+    
+    .float-down{
+        display: flex;
+        font-size: 1.4rem;
+        padding-top:1rem;
+        color:#333;
+        font-weight: bold;
+    }

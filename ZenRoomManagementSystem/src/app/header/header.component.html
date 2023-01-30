@@ -1,0 +1,16 @@
+<header>
+    <a href="#" class="logo"><span>R</span>oyal Lotus Hotel</a>
+    <nav class="navbar">
+        <a routerLink="home" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">home</a>
+        <a routerLink="gallery" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">gallery</a>
+        <a routerLink="book" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">book</a>
+        <a routerLink="policy" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">policy</a>
+        <a routerLink="contact" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">contact</a>
+        
+    </nav>
+    <div class="icons">
+        <i class="fas fa-user" id="login-btn"></i>
+        <a routerLink="adminlogin" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Admin Login</a>
+    </div>
+</header>
+<router-outlet></router-outlet>
